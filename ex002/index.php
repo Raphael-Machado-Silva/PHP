@@ -9,8 +9,9 @@
     <h1>Exemplo de PHP</h1>
     <!--Para somar dois operadores em php usasse o ponto -->
     <?php 
+        date_default_timezone_set("America/Sao_Paulo");
         echo "Hoje é dia " . date("d/M/Y");
-        echo " e a hora atual é " . date("G:i:s");
+        echo " e a hora atual é " . date("G:i:s T");
     ?>
 </body>
 </html>
