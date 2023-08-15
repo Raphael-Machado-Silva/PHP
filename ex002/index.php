@@ -7,8 +7,10 @@
 </head>
 <body>
     <h1>Exemplo de PHP</h1>
+    <!--Para somar dois operadores em php usasse o ponto -->
     <?php 
-    
+        echo "Hoje é dia " . date("d/M/Y");
+        echo " e a hora atual é " . date("G:i:s");
     ?>
 </body>
 </html>
