@@ -11,8 +11,8 @@
         $nome = "Raphael";
         $sobrenome = "Machado";
 
-        $nome = "Helena";
-        echo "Muito prazer, $nome" . " " . $sobrenome . ".";
+        const PAIS = "Brasil";
+        echo "Muito prazer, $nome $sobrenome". " eu moro em " . PAIS;
     ?>
 </body>
 </html>
