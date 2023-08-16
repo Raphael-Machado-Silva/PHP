@@ -24,6 +24,9 @@
 
         $forçar = (int)"90"; //forçando a mudar o tipo primitivo de uma variável
         var_dump($forçar);
+
+        $arrow = [6, 2.5, "maria"]; //vetor em PHP e mostrando seu tipo primitivo que depende de cada valor
+        var_dump($arrow);
     ?>
     
 </body>
