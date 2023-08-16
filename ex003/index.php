@@ -18,6 +18,12 @@
 
         $num_two = 0x1A; //bases numéricas -> 0x = hexadecimal, 0b = binário , 0 = Octal
         echo "O valor da variável é $num_two.";
+
+        $v = 250; //mostrar o tipo primitivo de uma variável e a despejar na tela
+        var_dump($v);
+
+        $forçar = (int)"90"; //forçando a mudar o tipo primitivo de uma variável
+        var_dump($forçar);
     ?>
     
 </body>
