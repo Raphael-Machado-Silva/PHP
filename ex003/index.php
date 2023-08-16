@@ -27,6 +27,13 @@
 
         $arrow = [6, 2.5, "maria"]; //vetor em PHP e mostrando seu tipo primitivo que depende de cada valor
         var_dump($arrow);
+
+        class Pessoa{
+            private string $password;
+        }
+
+        $p = new Pessoa();
+        var_dump($p)
     ?>
     
 </body>
