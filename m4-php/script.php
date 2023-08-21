@@ -51,6 +51,7 @@ if ($resultSet) {
     echo "Os dados foram inseridos com sucesso.";
 } else {
     echo "Ocorreu um erro e não foi possível inserir os dados.";
+    exit();
 }
 
 //Destruindo o objecto statement e fechando a conexão
