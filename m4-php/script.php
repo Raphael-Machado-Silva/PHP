@@ -20,7 +20,6 @@ if ($_REQUEST['data_nascimento_cliente'] == "") {
     echo "O campo Data de Nascimento não pode ficar vazio.";
     exit;
 }
-/***FIM DA VALIDAÇÃO DOS DADOS RECEBIDOS DO FORMULÁRIO ***/
 
 
 /***CONEXÃO COM O BD ***/
@@ -36,7 +35,7 @@ try {
 } catch (PDOException $e) {
     echo 'A conexão falhou e retorno a seguinte mensagem de erro: ' . $e->getMessage();
 }
-/*** FIM DOS CÓDIGOS DE CONEXÃO COM O BD ***/
+
 
 
 /***PREPARAÇÃO E INSERÇÃO NO BANCO DE DADOS ***/
@@ -60,9 +59,7 @@ $dsn = null;
 ?>
 
 
-
-
-
+<!--Código html para inserção da tabela-->
 <!DOCTYPE html>
 <html>
 
