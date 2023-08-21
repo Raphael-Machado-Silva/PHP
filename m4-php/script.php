@@ -32,7 +32,7 @@ define('USER', 'postgres');
 define('PASSWORD', '159753');
 
 try {
-    $dsn = new PDO("pgsql:host=" . HOST . ";port=" . PORT . ";dbname=" . DBNAME . ";user=" . USER . ";password=" . PASSWORD);
+    $dsn = new PDO("mysql:host=" . HOST . ";port=" . PORT . ";dbname=" . DBNAME . ";user=" . USER . ";password=" . PASSWORD);
 } catch (PDOException $e) {
     echo 'A conexão falhou e retorno a seguinte mensagem de erro: ' . $e->getMessage();
 }
