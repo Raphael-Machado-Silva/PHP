@@ -10,7 +10,7 @@
     <main>
         <h1>Resultado Final:</h1>
         <?php 
-        $num= $_REQUEST['num'] ?? 0;
+        $num= $_REQUEST['num'] ?? 0; //pegar o valor do input do index.html
 
         if($num>0){
             $antecessor= $num -1;
@@ -18,6 +18,8 @@
         echo "O número escolhido foi $num";
         echo "<br>Seu sucessor é $sucessor.";
         echo "<br>Seu antecessor é $antecessor.";
+        } else if($num ==""){
+            echo "Digite um número na página anterior!";
         } else{
             $negative_antecessor= $num +1;
             $negative_sucessor= $num -1;        
