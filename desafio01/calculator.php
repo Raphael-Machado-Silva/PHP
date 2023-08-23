@@ -12,13 +12,24 @@
         <?php 
         $num= $_REQUEST['num'] ?? 0;
 
-        $antecessor= $num -1;
-        $sucessor= $num +1;
-
+        if($num>0){
+            $antecessor= $num -1;
+            $sucessor= $num +1;
         echo "O número escolhido foi $num";
         echo "<br>Seu sucessor é $sucessor.";
         echo "<br>Seu antecessor é $antecessor.";
+        } else{
+            $negative_antecessor= $num +1;
+            $negative_sucessor= $num -1;        
+        echo "O número escolhido foi $num";
+        echo "<br>Seu sucessor é $negative_sucessor.";
+        echo "<br>Seu antecessor é $negative_antecessor.";
+        }
+
+
+
         ?>
+        <button><a href="index.html">&#x2B05; Voltar</a></button>
     </main>
     
 </body>
