@@ -25,9 +25,6 @@
         echo "<br>Seu sucessor é $negative_sucessor.";
         echo "<br>Seu antecessor é $negative_antecessor.";
         }
-
-
-
         ?>
         <button><a href="index.html">&#x2B05; Voltar</a></button>
     </main>
