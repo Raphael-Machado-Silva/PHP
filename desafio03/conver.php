@@ -8,12 +8,17 @@
 </head>
 <body>
     <main>
-        <h1>Resultado</h1>
+        <h1 style="text-align: center;">Resultado Final</h1>
         <?php 
         $valor= $_REQUEST['valor'];
         $dolar = $valor / 4.86;
 
-        echo "Você possui U$ " . number_format($dolar,2) . ".";
+        if($valor == " " || $valor == 0){
+            echo "Por favor volte para a página anterior e insira um valor!!";
+        } else{        
+            echo "Os seus $valor equivalem a: <br>";
+            echo "Você possui U$ " . number_format($dolar,2) . ".";}
+
         ?>
     <button><a href="index.html">&#x2B05; Voltar</a></button>
     </main>
