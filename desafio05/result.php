@@ -24,7 +24,7 @@
             }
         ?>
 
-        <button><a href="index.html" style="color: white;">Voltar</a></button>
+        <button onclick="javascript:history.go(-1)">Voltar</button>
     </main>
 </body>
 </html>
