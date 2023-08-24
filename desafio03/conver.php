@@ -31,5 +31,3 @@
     <button><a href="index.html">&#x2B05; Voltar</a></button>
     </main>
     
-</body>
-</html>
