@@ -7,6 +7,11 @@
     <title>Formulário Retroalimentado</title>
 </head>
 <body>
+    <?php 
+        //Capturando os dados do formulário
+        $valor1 = $_GET['v1'] ?? 0;
+        $valor2 = $_GET['v2'] ?? 0;
+    ?>
     <main>   <!--Método de chamar no action a própria página-->
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="get">
              <label for="v1">Valor 1:</label>
