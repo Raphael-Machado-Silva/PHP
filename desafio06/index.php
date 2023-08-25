@@ -29,7 +29,7 @@
         $dividendo = 200;
         $divisor = 20;
         echo intdiv(200, 20);
-        echo  100%7; */
+        echo  100 % 7; */
 
         if ($value1  == 0 || $value2 ==0){
             echo "Insira um valor aceitável acima!!";
