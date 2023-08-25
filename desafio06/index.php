@@ -36,10 +36,11 @@
         } else{
             $resto = $value1%$value2;
             $quociente = intdiv($value1, $value2);
-                echo "O dividendo é: " . $value1 . ".<br>";
-                echo "O divisor é: " . $value2 . ".<br>";
-                echo "O resto é: " . $resto . ".<br>";
-                echo "O quociente é: " . $quociente . ".<br>";
+            echo "<ul>";
+                echo "<li>O dividendo é: " . $value1 . ".</li><br>";
+                echo "<li>O divisor é: " . $value2 . ".</li><br>";
+                echo "<li>O resto é: " . $resto . ".</li><br>";
+                echo "<li>O quociente é: " . $quociente . ".</li></ul>";
         }
         ?>
     </section>
