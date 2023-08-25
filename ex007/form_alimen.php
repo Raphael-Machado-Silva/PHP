@@ -32,11 +32,11 @@
         <?php 
         $soma = $valor1 + $valor2;
             if($soma == 0 || $soma == null){
-            
-            } else{          
+            //mostrar nada, tipo DISPLAY NONE
+            } else{   
+            echo "Os valores passados foram: " . "<strong>$valor1</strong>"." e ". "<strong>$valor2</strong>" . ".<br>" ;     
             echo "O valor da soma é: " . "<strong>$soma</strong>". ".";
             }
-
         ?>
     </section>
 </body>
