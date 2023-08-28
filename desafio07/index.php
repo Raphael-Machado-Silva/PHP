@@ -26,7 +26,7 @@
             $resto = $salario%1320;
             $quociente =  intdiv($salario,  1320);
             if($salario == 0){
-                echo "Quem recebe um salário de R$0,00 ganha <strong>0 salários mínmos</strong> + R$ 0,00.";
+                echo "Quem recebe um salário de R$0,00 ganha <strong>0 salários mínimos</strong> + R$ 0,00.";
                 echo "<br> Insira um salário acima.";
             } else {
                 echo "  Quem recebe um salário de R$" . number_format($salario, 2, ",", ".") . " ganha ". $quociente. " salários mínimos + R$ ".number_format($resto, 2, ",", ".") . ".";
