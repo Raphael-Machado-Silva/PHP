@@ -29,7 +29,10 @@
         $result = $atual - $ano;
         if($result==$atual){
             echo "Insira dados acima para calcular!";
-        } else{
+        } else if($ano > $escolha_ano && $ano > $atual) {
+            echo "É impossível uma pessoa nascer neste ano!";
+        }
+        else {
             echo "Quem nasceu em ". $ano. " vai ter ". $result . " anos em ". $atual. "."; 
         }
 
