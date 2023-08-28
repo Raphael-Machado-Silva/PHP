@@ -14,7 +14,7 @@
         <h1 style="text-align: center;">Informe seu Salário</h1>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
             <label for="salario">Salário (R$):</label>
-            <input type="number" name="salario" id="idsalario" step="any"  value="<?php echo $salario;?>">
+            <input type="number" name="salario" id="idsalario" step="0.01"  value="<?php echo $salario;?>">
             <p>Considerando o salário mínimo de <strong>R$ 1.320,00</strong></p>
             <input type="submit" value="Calcular">
         </form>
@@ -28,7 +28,7 @@
             if($salario == 0){
                 echo "Quem recebe um salário de R$0,00 ganha <strong>0 salários mínmos</strong> + R$ 0,00.";
             } else {
-                echo "Quem recebe um salário de R$" . $salario . " ganha ". $quociente. " salários mínimos + R$ ". $resto . ".";
+                echo "Quem recebe um salário de R$" . number_format($salario, 2, ",", ".") . " ganha ". $quociente. " salários mínimos + R$ ".number_format($resto, 2, ",", ".") . ".";
             }
         ?>
     </section>
