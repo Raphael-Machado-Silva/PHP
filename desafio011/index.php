@@ -15,7 +15,7 @@
         <h1 style="text-align: center;">Reajustador de Preços</h1>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             <label for="preco">Preço do Produto (R$)</label>
-            <input type="number" name="preco" id="idpreco" min="0.1" step="0.01" value=" " required>
+            <input type="number" name="preco" id="idpreco" min="0.1" step="0.01" value="<?php echo $preco;?>; " required>
 
             <label for="reajust">Qual será o percentual de reajuste? (<strong><span id="p">?</span>%</strong>)</label>
             <input type="range" name="reajust" id="idreajust" min="0%" max="100%" value="50%" step="0.1" oninput="mudaValor()">
