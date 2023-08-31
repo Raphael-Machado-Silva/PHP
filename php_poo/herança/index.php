@@ -16,7 +16,7 @@ class Veiculo{
 }
 
 class Carro extends Veiculo{
-    //para usar herança deve-se usar o EXTENDS
+    //para usar herança deve-se usar o EXTENDS, podendo também ter configuranções a mais!
     public function ligarLimpador(){
         echo "Limpando em 3-2-1!";
     }
