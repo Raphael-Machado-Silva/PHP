@@ -17,6 +17,9 @@ class Veiculo{
 
 class Carro extends Veiculo{
     //para usar herança deve-se usar o EXTENDS
+    public function ligarLimpador(){
+        echo "Limpando em 3-2-1!";
+    }
 
 }
 
@@ -29,6 +32,7 @@ $carro->cor = "Vermelho";
 $carro->ano = 1990;
 $carro->Andar();
 $carro->Parar();
+$carro->ligarLimpador();
 var_dump($carro);
 
 
