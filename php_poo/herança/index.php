@@ -16,6 +16,7 @@ class Veiculo{
 }
 
 class Carro extends Veiculo{
+    //para usar herança deve-se usar o EXTENDS
 
 }
 
