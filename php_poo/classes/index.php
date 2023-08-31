@@ -1,5 +1,5 @@
 <?php 
-// CLASSES, ATRIBUTOS E MÉTODOS
+//----------------- CLASSES, ATRIBUTOS E MÉTODOS------------------
 class Pessoa{
     public $nome;
     public $idade;
@@ -20,5 +20,4 @@ $raphael->Falar();
 echo $raphael->nome;
 echo $raphael->idade;
 */
-
 ?>
