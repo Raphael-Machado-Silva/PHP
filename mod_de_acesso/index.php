@@ -9,7 +9,7 @@ PRIVATE - ao contrário do public, esse modificador faz com que qualquer método
 
 class Veiculo{
     public $modelo;
-    public $cor;
+    protected $cor;
     public $ano;
 
     public function Andar(){
@@ -19,6 +19,14 @@ class Veiculo{
     public function Parar(){
             echo "Parou!";
     }
+
+    public function setCor($c){
+        $this -> cor = $c;
+    }
+    public function getCor(){
+        return $this->cor;
+    }
+
 }
 
 class Carro extends Veiculo{
@@ -30,22 +38,17 @@ class Carro extends Veiculo{
 }
 
 class Moto extends Veiculo{
+    public function darGrau(){
+        echo "Dar Grau!";
+    }
 }
 
-$carro = new Carro();
-$carro->modelo = "Gol";
-$carro->cor = "Vermelho";
-$carro->ano = 1990;
-$carro->Andar();
-$carro->Parar();
-$carro->ligarLimpador();
-var_dump($carro);
+//acessando algo public
+$veiculo = new Veiculo();
+$veiculo-> modelo = "Gol";
+echo $veiculo->modelo;
 
-
-$moto = new Moto();
-$moto->modelo = "FAN-160";
-$moto->cor = "Preto";
-$moto->ano = 2021;
-$moto->Andar();
-$moto->Parar();
-var_dump($moto);
+//acessando algo protected (só podendo acessar dentro da classe, usando set e get)
+$veiculo_protected = new Veiculo();
+$veiculo_protected-> setCor("vermelho");
+echo $veiculo_protected->getCor();
