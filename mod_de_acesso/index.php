@@ -2,7 +2,7 @@
 /*   
 PUBLIC - fará com que não haja ocultação nenhuma, toda propriedade ou método declarado é acessível por todos que quiserem acessá-lo...
 
-PROTECTED - visibilidade protected faz com que todos os herdeiros vejam as properiedades protegidos como se fossem públicos...
+PROTECTED - visibilidade protected faz com que todos os herdeiros vejam as propriedades protegidos como se fossem públicos...
 
 PRIVATE - ao contrário do public, esse modificador faz com que qualquer método ou propriedade só seja visivel pela classe que a declarou..
 */
@@ -10,7 +10,7 @@ PRIVATE - ao contrário do public, esse modificador faz com que qualquer método
 class Veiculo{
     public $modelo;
     protected $cor;
-    public $ano;
+    private $ano;
 
     public function Andar(){
             echo "Andou!";
@@ -20,10 +20,10 @@ class Veiculo{
             echo "Parou!";
     }
 
-    public function setCor($c){
+            public function setCor($c){
         $this -> cor = $c;
     }
-    public function getCor(){
+             public function getCor(){
         return $this->cor;
     }
 
@@ -52,3 +52,5 @@ echo $veiculo->modelo;
 $veiculo_protected = new Veiculo();
 $veiculo_protected-> setCor("vermelho");
 echo $veiculo_protected->getCor();
+
+//já o private só pode ser acessada e criada totalmente dentro da classe
