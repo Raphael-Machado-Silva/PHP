@@ -54,3 +54,4 @@ $veiculo_protected-> setCor("vermelho");
 echo $veiculo_protected->getCor();
 
 //já o private só pode ser acessada e criada totalmente dentro da classe
+var_dump($veiculo_protected); //o ano aparece private
