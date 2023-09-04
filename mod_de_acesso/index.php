@@ -1,6 +1,10 @@
 <?php 
 /*   
-PUBLIC - fará com que não haja ocultação nenhuma, toda propriedade ou método declarado é acessível por todos que quiserem acessá-lo
+PUBLIC - fará com que não haja ocultação nenhuma, toda propriedade ou método declarado é acessível por todos que quiserem acessá-lo...
+
+PROTECTED - visibilidade protected faz com que todos os herdeiros vejam as properiedades protegidos como se fossem públicos...
+
+PRIVATE - ao contrário do public, esse modificador faz com que qualquer método ou propriedade só seja visivel pela classe que a declarou..
 */
 
 class Veiculo{
