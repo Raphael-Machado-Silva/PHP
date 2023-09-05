@@ -13,7 +13,7 @@ class Veiculo{
         }
         // MANEIRA DE EXIBIR UMA FUNÇÃO PRIVATE (SCOPO)
             public function mostrarAcao(){
-            $this->Andar();
+                $this->Andar();
             }
 }
 
