@@ -11,6 +11,10 @@ class Veiculo{
         public function Parar (){
             echo "Parou!!";
         }
+        // MANEIRA DE EXIBIR UMA FUNÇÃO PRIVATE (SCOPO)
+            public function mostrarAcao(){
+            $this->Andar();
+            }
 }
 
 
@@ -22,4 +26,4 @@ class Carro extends Veiculo{
 }
 
 $carro = new Veiculo();
-$carro->Andar();
+$carro->mostrarAcao();
