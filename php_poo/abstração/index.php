@@ -1,30 +1,43 @@
 <?php
 //-----------------------ABSTRAÇÃO-----------------------------
 
-abstract class Banco{
+abstract class Banco
+{
     protected $saldo;
     protected $limiteSaque;
     protected $juros;
 
-        public function setSaldo($s){
-            $this->saldo = $s;
-        }
-        public function getSaldo(){
-            return $this->saldo;
-        }
+    public function setSaldo($s)
+    {
+        $this->saldo = $s;
+    }
+    public function getSaldo()
+    {
+        return $this->saldo;
+    }
 
-    abstract protected function Sacar();
-    abstract protected function Depositar();
+    abstract protected function Sacar($s);
+    abstract protected function Depositar($d);
 }
 
-class Itau extends Banco{
-    public function Sacar(){
-        echo "Sacou!";
+class Itau extends Banco
+{
+
+    public function Sacar($s)
+    {
+        $this->saldo -=  $s;
+        echo "<hr>Sacou: ".  $s;
     }
-    public function Depositar(){
-        echo "Depositou!";
+
+    public function Depositar($d)
+    {
+        $this->saldo += $d;
     }
 }
 
 
 $itau = new Itau();
+$itau->setSaldo(1000);
+echo "<hr> Saldo: " . $itau->getSaldo();
+
+$itau -> Sacar(250);
