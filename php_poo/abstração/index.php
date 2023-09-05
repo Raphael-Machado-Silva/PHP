@@ -32,6 +32,7 @@ class Itau extends Banco
     public function Depositar($d)
     {
         $this->saldo += $d;
+        echo "<hr>Depositou: ".  $d;
     }
 }
 
@@ -39,5 +40,8 @@ class Itau extends Banco
 $itau = new Itau();
 $itau->setSaldo(1000);
 echo "<hr> Saldo: " . $itau->getSaldo();
-
 $itau -> Sacar(250);
+echo "<hr> Saldo: " . $itau->getSaldo();
+
+$itau->Depositar(900);
+echo "<hr> Saldo: " . $itau->getSaldo();
