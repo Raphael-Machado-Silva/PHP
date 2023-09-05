@@ -8,8 +8,11 @@
 </head>
 <body>
 <?php 
-        $value_a = $_REQUEST['value_a']??0;
-        $value_x = $_REQUEST['value_x']??0;
+    $value_a = $_REQUEST['value_a'] ?? 0;
+    $value_b = $_REQUEST['value_b'] ?? 0;
+    $value_c = $_REQUEST['value_c'] ?? 0;
+    $value_x = 0; // Inicializamos com 0
+
     ?>
     <div class="container">
         <h1>Regra de Três</h1>
@@ -32,6 +35,6 @@
             </div>
         </form>
     </div>
-    <?php ?>
+    <?php echo $value_x; ?>
 </body>
 </html>
