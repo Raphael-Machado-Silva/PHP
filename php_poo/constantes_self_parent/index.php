@@ -15,7 +15,7 @@ class Raphael extends Pessoa {
     const nome = "Machado";
     
     public function exibirNome(){
-        echo self::nome; //exibir o valor da const usando self (a constante que está dentro do scopo)
+        echo self::nome; //exibir o valor da const usando self (preferência a constante que está dentro do scopo)
     }
 }
 
