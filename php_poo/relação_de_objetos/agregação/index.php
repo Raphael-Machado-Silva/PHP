@@ -2,36 +2,36 @@
 //------------------AGREGAÇÃO/RELAÇÃO ENTRE OBJETOS----------------
 //Na agregação, uma classe precisa da outra para executar sua ação, ou seja, uma classe utiliza a outra como parte de si própria
 
-class Produtos{
+class Produto {
     public $nome;
-    public $valor;
+    public $preco;
 
-    function __construct($nome, $valor){
+    function __construct($nome, $preco) {
         $this->nome = $nome;
-        $this->valor = $valor;
+        $this->preco = $preco;
     }
 }
 
-class Carrinho{
-    public $produtos;
+class CarrinhoDeCompras {
+    public $itens;
 
-    public function adiciona(Produtos $produto){
-        $this->produtos[] = $produto;
+    public function adicionarItem(Produto $item) {
+        $this->itens[] = $item;
     }
-    public function exibir(){
-        foreach ($this->produtos as $produto){
-            echo $produto->nome. '<br>';
-            echo $produto->valor. "<hr>";
+
+    public function listarItens() {
+        foreach ($this->itens as $item) {
+            echo "Nome do Produto: " . $item->nome . '<br>';
+            echo "Preço: R$" . $item->preco . "<hr>";
         }
     }
 }
 
+$produto1 = new Produto("Notebook", 1200);
+$produto2 = new Produto("Celular", 1000);
 
-$produto1 = new Produtos("Notebook", "1200");
-$produto2 = new Produtos("Celular", "1000");
+$carrinho = new CarrinhoDeCompras();
+$carrinho->adicionarItem($produto1);
+$carrinho->adicionarItem($produto2);
 
-$carrinho = new Carrinho();
-$carrinho->adiciona($produto1);
-$carrinho->adiciona($produto2);
-
-$carrinho->exibir();
+$carrinho->listarItens();
